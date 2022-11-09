@@ -4,4 +4,4 @@ From openjdk:8
 ADD ./ /app
 # run the war
 EXPOSE 8080
-CMD ["java" "-jar" ".\target\project-cicd.war"]
+# CMD ["java" "-jar" ".\target\project-cicd.war"]
