@@ -1,5 +1,5 @@
 #Pull base image
-From openjdk:8
+From maven:3.6.3-jdk-8
 # Copy to images tomcat path
 ADD ./ /app
 # run the war
