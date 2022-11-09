@@ -4,5 +4,6 @@ From maven:3.6.3-jdk-8
 ADD ./ /app
 # run the war
 EXPOSE 8080
+WORKDIR /app
 RUN mvn install
-# CMD ["java" "-jar" ".\target\project-cicd.war"]
+CMD ["java" "-jar" ".\target\project-cicd.war"]
