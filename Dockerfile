@@ -4,4 +4,5 @@ From openjdk:8
 ADD ./ /app
 # run the war
 EXPOSE 8080
+RUN mvn install
 # CMD ["java" "-jar" ".\target\project-cicd.war"]
