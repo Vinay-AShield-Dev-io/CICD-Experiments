@@ -2,8 +2,6 @@
 From openjdk:8
 # Copy to images tomcat path
 ADD ./ /app
-
-# run the .war
-CMD ["java" "-jar" ".\target\project-cicd.war"]
-
+# run the war
 EXPOSE 8080
+CMD ["java" "-jar" ".\target\project-cicd.war"]
