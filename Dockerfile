@@ -5,5 +5,5 @@ ADD ./ /app
 # run the war
 EXPOSE 8080
 WORKDIR /app
-RUN mvn install
+#RUN mvn install
 #CMD ["java" "-jar" ".\target\project-cicd.war"]
