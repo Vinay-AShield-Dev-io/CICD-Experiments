@@ -10,6 +10,6 @@ public class MainController {
     @GetMapping("/")
     @ResponseBody
     public String viewIndexPage() {
-        return "hello java";
+        return "hello java 2";
     }
 }
