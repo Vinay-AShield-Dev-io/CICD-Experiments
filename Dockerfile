@@ -5,6 +5,6 @@ COPY src /app/src
 RUN mvn -f /app/pom.xml clean package
 
 # Run stage
-FROM openjdk:8-jdk-alpine # Use your target JDK here !
+FROM openjdk:8-jdk-alpine
 COPY --from=build /app/target/project-cicd.war /app/app.war
 ENTRYPOINT ["java","-jar","/app/app.war"]
