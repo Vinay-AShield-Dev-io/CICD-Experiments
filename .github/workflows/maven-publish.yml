@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: generate FOO unique variable based on timestamp
-      run: echo FOO=foobar--$(date +%s) >> $GITHUB_ENV
+      run: echo FOO=$(date +%s) >> $GITHUB_ENV
     
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ${{ env.IMAGE_NAME }}:${{ env.FOO }}
